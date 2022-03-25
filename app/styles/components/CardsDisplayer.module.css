@@ -1,0 +1,154 @@
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100vw;
+  position: relative;
+  left: -12vw;
+}
+
+.arrowContainer {
+  margin: 0 5vw;
+  z-index: 10;
+  border: 0;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: var(--blueBtnBack);
+  color: var(--font-primary);
+}
+
+.arrowSubContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.cardsContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.itemContainer {
+  transition: all 0.2s ease-in-out;
+  position: absolute;
+  max-width: 50vw;
+}
+
+.item0 {
+  transform: scale(0.5);
+  left: 0vw;
+  z-index: 3;
+}
+.item1 {
+  transform: scale(0.75);
+  left: 10vw;
+  z-index: 4;
+}
+.item2 {
+  transform: scale(1);
+  z-index: 5;
+}
+.item3 {
+  transform: scale(0.75);
+  right: 10vw;
+  z-index: 4;
+}
+.item4 {
+  transform: scale(0.5);
+  right: 0vw;
+  z-index: 3;
+}
+
+@media screen and (min-width: 500px) {
+  .item0 {
+    transform: scale(0.5);
+    left: 10vw;
+    z-index: 3;
+  }
+  .item1 {
+    transform: scale(0.75);
+    left: 20vw;
+    z-index: 4;
+  }
+  .item2 {
+    transform: scale(1);
+    z-index: 5;
+  }
+  .item3 {
+    transform: scale(0.75);
+    right: 20vw;
+    z-index: 4;
+  }
+  .item4 {
+    transform: scale(0.5);
+    right: 10vw;
+    z-index: 3;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .item0 {
+    transform: scale(0.5);
+    left: 20vw;
+    z-index: 3;
+  }
+  .item1 {
+    transform: scale(0.75);
+    left: 28vw;
+    z-index: 4;
+  }
+  .item2 {
+    transform: scale(1);
+    z-index: 5;
+  }
+  .item3 {
+    transform: scale(0.75);
+    right: 28vw;
+    z-index: 4;
+  }
+  .item4 {
+    transform: scale(0.5);
+    right: 20vw;
+    z-index: 3;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .container {
+    width: 100%;
+    position: block;
+    left: 0;
+  }
+  .item0 {
+    transform: scale(0.5);
+    left: 15vw;
+    z-index: 3;
+  }
+  .item1 {
+    transform: scale(0.75);
+    left: 20vw;
+    z-index: 4;
+  }
+  .item2 {
+    transform: scale(1);
+    z-index: 5;
+  }
+  .item3 {
+    transform: scale(0.75);
+    right: 20vw;
+    z-index: 4;
+  }
+  .item4 {
+    transform: scale(0.5);
+    right: 15vw;
+    z-index: 3;
+  }
+}

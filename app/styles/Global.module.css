@@ -1,0 +1,16 @@
+.backgroundBlur {
+  background-color: var(--blurColor);
+  -webkit-backdrop-filter: var(--blur);
+  backdrop-filter: var(--blur);
+}
+
+.btn {
+  background-color: rgba(0, 0, 0, 0);
+  border: 0;
+  cursor: pointer;
+  color: var(--blueAccent);
+}
+
+.btn:hover {
+  text-decoration: underline;
+}

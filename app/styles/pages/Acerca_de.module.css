@@ -1,0 +1,117 @@
+.container {
+  background-color: black;
+  min-height: calc(100vh - 143px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-size: 50px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.description {
+  max-width: 60vw;
+  font-size: 20px;
+  text-align: center;
+}
+
+.cardsContainer {
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+  width: 100vw;
+  padding-bottom: 20px;
+}
+
+.itemContainer {
+  border-radius: 50px;
+  margin: 20px;
+  padding: 20px 20px;
+  min-width: 250px;
+  max-width: 250px;
+  transition: all 0.2s ease-in-out;
+}
+
+.itemSubContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.itemTitle {
+  font-size: 22px;
+  text-align: center;
+}
+
+.itemText {
+  text-align: center;
+  margin: 5px 0;
+  color: var(--font-primary-opacity-sub);
+  font-size: 18px;
+}
+
+.itemBtn {
+  border: 3px solid white;
+  padding: 2px 35px;
+  border-radius: 100px;
+  color: white;
+  margin-top: 30px;
+  transition: var(--transition);
+}
+.itemBtn:hover {
+  transform: scale(1.05);
+}
+
+.greenGradient {
+  background-image: var(--darGreenGradient);
+}
+.greenGradient:hover {
+  box-shadow: var(--glowGreen);
+}
+
+.blueGradient {
+  background-image: var(--darkBlueGradient);
+}
+.blueGradient:hover {
+  box-shadow: var(--glowBlue);
+}
+
+.purpleGradient {
+  background-image: var(--purpleGradient);
+}
+.purpleGradient:hover {
+  box-shadow: var(--glowPink);
+}
+
+.goldGradient {
+  background-image: var(--goldGradient);
+}
+.goldGradient:hover {
+  box-shadow: var(--glowGold);
+}
+
+.redGradient {
+  background-image: var(--redGradient);
+}
+.redGradient:hover {
+  box-shadow: var(--glowRed);
+}
+
+@media screen and (max-width: 900px) {
+  .description {
+    max-width: 80vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .description {
+    max-width: 80vw;
+  }
+  .cardsContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+}

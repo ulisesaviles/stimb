@@ -1,0 +1,137 @@
+/* Font import */
+@font-face {
+  font-family: franklin-gothic;
+  src: url(../public/franklin-gothic/FranklinGothicITALIC.ttf);
+}
+
+/* Variables */
+:root {
+  --border: 1px solid rgb(80, 80, 80);
+  --transition: all 0.1s ease-in-out;
+  --blur: blur(30px) brightness(0.3);
+  --blurColor: rgba(60, 60, 60, 0.3);
+  --blueAccent: rgb(41, 151, 255);
+  --blueBtnBack: rgb(0, 113, 227);
+  --blueBtnBackHovered: rgb(30, 143, 255);
+  --font-primary: white;
+  --font-primary-opacity: rgba(255, 255, 255, 0.6);
+  --font-primary-opacity-sub: rgba(255, 255, 255, 0.9);
+  --htmlColor: rgb(30, 30, 30);
+  --brandFont: franklin-gothic;
+  --bold: 600;
+  --fontAccent: var(--blueAccent);
+  --fontGreen: rgb(123, 204, 117);
+  --totalHeaderHeight: 71.5px;
+  --greyGradient: linear-gradient(
+    to right bottom,
+    rgb(15, 15, 15),
+    rgb(35, 35, 35)
+  );
+  --orangeGradient: linear-gradient(
+    to left bottom,
+    rgb(255, 170, 0),
+    rgb(65, 48, 13)
+  );
+  --blueGradient: linear-gradient(
+    to right bottom,
+    rgb(138, 161, 255),
+    rgb(29, 32, 114)
+  );
+  --darkBlueGradient: linear-gradient(
+    to right bottom,
+    rgb(58, 48, 141),
+    rgb(73, 211, 211)
+  );
+  --greenGradient: linear-gradient(
+    to right top,
+    rgb(27, 81, 24),
+    rgb(10, 255, 0)
+  );
+  --lightGreenGradient: linear-gradient(
+    to right bottom,
+    rgb(50, 124, 50),
+    rgb(88, 206, 88)
+  );
+  --darGreenGradient: linear-gradient(
+    to right top,
+    rgb(52, 108, 58),
+    rgb(80, 191, 72)
+  );
+  --darkRedGradient: linear-gradient(
+    to right top,
+    rgb(43, 3, 3),
+    rgb(255, 0, 0)
+  );
+  --redGradient: linear-gradient(
+    to right top,
+    rgb(226, 48, 48),
+    rgb(152, 5, 5)
+  );
+  --lightRedGradient: linear-gradient(
+    to right bottom,
+    rgb(204, 29, 29),
+    rgb(232, 76, 97)
+  );
+  --purpleGradient: linear-gradient(
+    to right bottom,
+    rgb(58, 48, 141),
+    rgb(233, 64, 64)
+  );
+  --goldGradient: linear-gradient(
+    to right bottom,
+    rgb(233, 198, 11),
+    rgb(141, 116, 48)
+  );
+  --glowBlue: 0px 3px 35px rgba(105, 116, 255, 0.35);
+  --glowRed: 0px 3px 35px rgba(150, 50, 50, 0.35);
+  --glowGreen: 0px 3px 35px rgba(50, 150, 50, 0.35);
+  --glowPink: 0px 3px 35px rgba(221, 12, 92, 0.35);
+  --glowGold: 0px 3px 35px rgba(131, 123, 14, 0.35);
+  --separators: rgba(255, 255, 255, 0.3);
+}
+
+/* Global */
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  color: var(--font-primary);
+  background-color: var(--htmlColor);
+}
+
+/* Logo font */
+brandFont {
+  font-family: var(--brandFont);
+  font-weight: var(--bold);
+  color: var(--font-primary);
+}
+
+/* Scroll */
+::-webkit-scrollbar {
+  width: 10px;
+  background: black;
+  z-index: 10;
+  height: 7px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(30, 30, 30);
+  border-radius: 6px;
+}
+
+/* Main section of all pages */
+main {
+  background-color: black;
+  padding: 5vh 15vw;
+  min-height: calc(90vh - (2 * var(--totalHeaderHeight)));
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}

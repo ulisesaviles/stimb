@@ -1,0 +1,10 @@
+.invisibleHeader,
+.invisibleFooter {
+  height: 71px;
+  background-color: black;
+}
+
+.content {
+  max-height: 100vh;
+  min-height: 100vh;
+}

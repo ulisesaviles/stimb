@@ -1,0 +1,41 @@
+.container {
+  border-radius: 100px;
+  display: flex;
+  flex-direction: row;
+  width: max-content;
+  padding: 0 10px;
+  position: fixed;
+  left: 2vw;
+  bottom: 2vh;
+  z-index: 100;
+}
+
+.lang {
+  padding: 10px 10px 8px 10px;
+}
+
+.btn {
+  background-color: rgba(0, 0, 0, 0);
+  border: 0;
+  cursor: pointer;
+  color: var(--fontAccent);
+}
+
+.btn:hover {
+  text-decoration: underline;
+}
+
+.selectedLang {
+  color: white;
+  cursor: auto;
+}
+
+.selectedLang:hover {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 850px) {
+  .lang {
+    font-size: 16px;
+  }
+}

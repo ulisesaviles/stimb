@@ -1,0 +1,22 @@
+@font-face {
+  font-family: franklin-gothic;
+  src: url(../../public/franklin-gothic/FranklinGothicITALIC.ttf);
+}
+
+.footerContainer {
+  padding-left: calc(5vw + 150px);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  border-top: var(--border);
+}
+
+@media screen and (max-width: 850px) {
+  .footerContainer {
+    justify-content: flex-end;
+    padding-left: calc(5vw + 170px);
+    padding-right: 5vw;
+    text-align: right;
+  }
+}

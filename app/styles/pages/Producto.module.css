@@ -1,0 +1,182 @@
+.main {
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.contentContainer {
+  min-width: 80vw;
+  max-width: 80vw;
+  border-radius: 50px;
+  background-image: var(--greyGradient);
+  min-height: calc(90vh - 203px);
+  max-height: fit-content;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  margin: 0 10vw;
+}
+
+.backContainer {
+  width: 100%;
+}
+
+.back {
+  color: var(--fontAccent);
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+.back:hover {
+  text-decoration: underline;
+}
+
+.backArrow {
+  margin-top: 1px;
+}
+
+.contentSubContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.imgSectionContainer {
+  min-width: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imgContainer {
+  max-width: 60%;
+  margin: 40px 0 20px;
+}
+
+.imgSectionGalery {
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+  width: 100%;
+  align-items: center;
+}
+
+.galeryImgContainer {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  margin: 10px;
+  padding: 10px;
+  box-shadow: 0px 3px 35px rgba(0, 0, 0, 0.2);
+  min-width: 50px;
+  max-width: 50px;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.galeryImgContainer:hover {
+  transform: scale(1.05);
+}
+
+.galeryImgSelected {
+  background-color: var(--blueBtnBack);
+}
+
+.infoContainer {
+  margin-left: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.name {
+  font-size: 55px;
+  text-align: center;
+}
+
+.type {
+  color: var(--fontGreen);
+  margin: 0 0 10px;
+  font-size: 22px;
+  text-align: center;
+}
+
+.infoItemContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.infoItemName,
+.infoItem {
+  font-size: 18px;
+  margin: 0;
+}
+
+.infoItem {
+  margin-left: 0;
+}
+
+.contactQuestion {
+  align-self: center;
+  opacity: 0.6;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.contact {
+  background-color: var(--blueBtnBack);
+  border-radius: 100px;
+  padding: 7px 30px;
+  color: white;
+  width: fit-content;
+  font-size: 20px;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.16);
+}
+
+.contact:hover {
+  box-shadow: 0px 3px 20px rgba(83, 94, 255, 0.6);
+}
+
+.contactContainer {
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+}
+
+@media screen and (min-width: 700px) {
+  .contentSubContainer {
+    flex-direction: row;
+  }
+  .imgSectionContainer {
+    min-width: 40%;
+    max-width: 40%;
+  }
+  .infoContainer {
+    margin-left: 5%;
+    width: 55%;
+    align-items: flex-start;
+  }
+  .name,
+  .type {
+    text-align: left;
+  }
+  .infoItemContainer {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+  }
+  .galeryImgContainer {
+    min-width: 70px;
+    max-width: 70px;
+    border-radius: 25px;
+  }
+  .infoItem {
+    margin-left: 10px;
+  }
+}

@@ -1,0 +1,108 @@
+.main {
+  padding: 0;
+}
+
+.section1Container {
+  background-image: linear-gradient(to bottom, rgb(35, 35, 35), rgb(0, 0, 0));
+  padding: 5vh 8vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section1Sale {
+  color: var(--fontGreen);
+  margin: 0;
+  font-size: 20px;
+  text-align: center;
+}
+
+.section1Title {
+  font-size: 50px;
+  text-align: center;
+}
+
+.section1Content {
+  font-size: 22px;
+  text-align: center;
+  margin: 0 0 20px 0;
+  color: var(--font-primary-opacity);
+}
+
+.section2Container {
+  padding: 0 10vw;
+}
+
+.categoryTitle {
+  font-size: 30px;
+  text-align: center;
+}
+
+.separator {
+  background-color: var(--separators);
+  height: 2px;
+  border-radius: 10px;
+  width: 100%;
+  margin: 15px 0 10px;
+}
+
+.productsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.itemContainer {
+  margin: 10px;
+}
+
+.categoryContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section3Container {
+  padding: 5vh 8vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.section3Title {
+  font-size: 50px;
+  text-align: center;
+}
+
+.section3Text {
+  text-align: center;
+  color: var(--font-primary);
+  font-size: 18px;
+  padding: 0 5vw;
+  margin: 10px 0 20px;
+  color: var(--font-primary-opacity);
+}
+
+.section3Link {
+  color: var(--fontAccent);
+  opacity: 1;
+}
+
+.section3Link:hover {
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 800px) {
+  .section1Content {
+    max-width: 55vw;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .section1Container,
+  .section3Container {
+    padding: 5vh 13vw;
+  }
+}
