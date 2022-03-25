@@ -26,7 +26,7 @@ export default async function handler(request, response) {
     .send(message)
     .then((res) => {
       // Send response
-      return response.status(200).send("SUCCESS");
+      return response.status(200).send(JSON.stringify(res));
     })
     .catch((e) => {
       // Catch error
