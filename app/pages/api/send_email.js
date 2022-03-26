@@ -15,8 +15,11 @@ export default async function handler(request, response) {
   // Build message object
   const message = {
     to,
-    from: "ulisesaviles.dev@gmail.com",
-    subject: "No subject",
+    from: {
+      name: "STIMB",
+      email: "ulisesaviles.dev@gmail.com",
+    },
+    subject: "Hello from sendgrid",
     text,
     html: "<h1>Hello from sendGrid</h1>",
   };
