@@ -30,6 +30,6 @@ export default async function handler(request, response) {
     })
     .catch((e) => {
       // Catch error
-      return response.status(500).send("Err");
+      return response.status(500).send(e);
     });
 }
