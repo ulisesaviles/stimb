@@ -10,14 +10,14 @@ sgMail.setApiKey(SendGrid_APIKey);
 // Function handler
 export default async function handler(request, response) {
   // Get request body
-  const { subject } = request.body;
+  const { to, text } = request.body;
 
   // Build message object
   const message = {
-    to: "ulisesaviles.dev@gmail.com",
+    to,
     from: "ulisesaviles.dev@gmail.com",
-    subject: subject ? subject : "No subject",
-    text: "Hello from sendGrid.",
+    subject: "No subject",
+    text,
     html: "<h1>Hello from sendGrid</h1>",
   };
 
