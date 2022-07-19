@@ -23,7 +23,7 @@ const products = {
           },
           type: {
             es: "Máquina bloquera automática",
-            en: "Automatic block machina",
+            en: "Automatic block machine",
           },
           cardDescription: {
             line1: {
@@ -78,7 +78,7 @@ const products = {
           },
           type: {
             es: "Máquina bloquera automática",
-            en: "Automatic block machina",
+            en: "Automatic block machine",
           },
           cardDescription: {
             line1: {
@@ -133,7 +133,7 @@ const products = {
           },
           type: {
             es: "Máquina bloquera automática",
-            en: "Automatic block machina",
+            en: "Automatic block machine",
           },
           cardDescription: {
             line1: {
